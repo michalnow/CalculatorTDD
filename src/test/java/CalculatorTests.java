@@ -1,3 +1,4 @@
+import com.michal.tdd.Calculator;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -34,11 +35,11 @@ public class CalculatorTests {
         Calculator calculator = new Calculator();
 
         //then
-        Assert.assertEquals(50, calculator.substract(100,50));
-        Assert.assertEquals(0, calculator.substract(50,50));
-        Assert.assertEquals(-100, calculator.substract(-50,50));
-        Assert.assertEquals(-50, calculator.substract(-100,-50));
-        Assert.assertEquals(0, calculator.substract(0,0));
+        Assert.assertEquals(50, calculator.subtract(100,50));
+        Assert.assertEquals(0, calculator.subtract(50,50));
+        Assert.assertEquals(-100, calculator.subtract(-50,50));
+        Assert.assertEquals(-50, calculator.subtract(-100,-50));
+        Assert.assertEquals(0, calculator.subtract(0,0));
     }
 
     @Test
@@ -48,7 +49,7 @@ public class CalculatorTests {
         Calculator calculator = new Calculator();
 
         //then
-        Assert.assertNotEquals(100, calculator.substract(50,50));
+        Assert.assertNotEquals(100, calculator.subtract(50,50));
     }
 
     @Test
