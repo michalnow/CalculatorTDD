@@ -1,5 +1,7 @@
 package com.michal.tdd;
 
+import java.util.Arrays;
+
 public class Calculator {
     
     public int add(int firstNumber, int secondNumber) {
@@ -19,5 +21,13 @@ public class Calculator {
         }
 
         return dividend / divisor;
+    }
+
+    public int multiply(int firstNumber, int secondNumber) {
+        return firstNumber * secondNumber;
+    }
+
+    public int add(int[] numbers) {
+        return Arrays.stream(numbers).sum();
     }
 }
