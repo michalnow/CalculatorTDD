@@ -111,6 +111,7 @@ public class CalculatorTests {
 
         //then
         Assert.assertEquals(15,calculator.add(numbers));
+        Assert.assertEquals(0, calculator.add(new int[]{}));
     }
 
 }
